@@ -5,11 +5,11 @@ The idea was to develop a Web Application similar to a *blog*.
 
 As I mostly develop using the `Meteor` framework, I wanted for this project to be (re-)usable as a boilerplate for `ExpressJS` projects. I read a really nice tutorial you can find [here](https://crosp.net/blog/web/nodejs/secure-rest-api-using-nodejs-part-2-express-jwt-mongoose) with its source on this [GitHub repo](https://github.com/CROSP/blog-api-nodejs-example) both were great inspiration as you can see. So kudos go to @CROSP !
 
-## Exercise
+## What is it ? Started as an exercise...
 
 So let's get to the point of this exercise. And what is expected to be able to achieve.
 
-### Back
+### Back end
 
 Develop a **REST API**, that will allow a user to login. Once logged in the user will be able to:
   - Read a post
@@ -26,11 +26,16 @@ Develop a **REST API**, that will allow a user to login. Once logged in the user
 
 > Of course, timeouts values were just part of the exercise and the proof of concept was to find a proper way to add your own rules with the assurance of good code maintenability while keeping everything proper.
 
-### Front
+### Front end
 
-No front end developped, not the point as its pure API :smile:
+No front end developped, not the point as it is pure API :smile:
 
-## Technologies
+## How it works ?
+
+You can have a look at the [API](API.md) for detailed view on routes and the operations allowed.
+I am currently also writting a more in depth documentation on how it works [here](INTERNALS.md).
+
+### Technologies
 
 * **For the API**:
   - NodeJS (tested with v6+)
@@ -46,7 +51,7 @@ No front end developped, not the point as its pure API :smile:
   - CoffeeScript
   - Docker
 
-## Caveats
+### Caveats
 
 I committed private keys as this is supposed to be an example, **not production ready code** !
 
@@ -54,7 +59,7 @@ It is up to you to clear them if you want and use this code as your base for you
 
 As the `Dockerfile` stipulates, every time the container is built a new set of public/private key pairs are generated. :wink:
 
-## How to run
+## How to run ?
 
 ```
 # To run the test suite
@@ -67,6 +72,11 @@ $ docker-compose up staging
 ## TODO
 
 Well, complete testing, and maybe enhance some parts !
+What could be done first is to complete a fully _compliant_ **RESTful** API with **HATEOAS** for fun. :wink:
+
+- implement `PATCH` methods
+- separate process workflow with `PUT` method
+
 Then, so many things can be done, like front end, additional features, and why not write a blog article based on that piece of software :laughing:
 
 ## Feedback
