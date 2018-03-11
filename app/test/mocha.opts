@@ -1,0 +1,3 @@
+--timeout 120000
+--require coffee-script/register
+--exit

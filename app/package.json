@@ -1,0 +1,55 @@
+{
+  "name": "pineapple-tweet",
+  "version": "1.0.0",
+  "description": "An Twitter like API using NodeJS, Mongoose, Express and JWT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oorabona/express-mongo-jwt-coffee-api.git"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "pretest": "npm run build",
+    "prepare": "npm run build",
+    "build": "npm run clean && npm run compile",
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "test": "./node_modules/mocha/bin/mocha 'test/**/*.{js,coffee}'",
+    "start": "node lib/index.js",
+    "start:coffee": "coffee src/index.coffee"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "keywords": [
+    "Twitter",
+    "API",
+    "Express",
+    "JWT",
+    "Mongoose"
+  ],
+  "author": "Olivier Orabona",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "coffee-script": "^1.12.7",
+    "debug": "^3.1.0",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "auto-bind": "^1.1.0",
+    "body-parser": "^1.17.1",
+    "coffeescript": "^2.2.1",
+    "express": "latest",
+    "express-validator": "^4.3.0",
+    "extend-error": "0.0.2",
+    "http-status-codes": "^1.1.6",
+    "jsonwebtoken": "^7.4.0",
+    "mongoose": "^4.9.8",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "latest",
+    "passport-strategy": "latest",
+    "should": "^11.2.1",
+    "validator": "^7.0.0"
+  }
+}

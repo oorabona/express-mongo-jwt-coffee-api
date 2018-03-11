@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: mongo:3
+  test:
+    build: .
+    environment:
+      SECRET_KEY: testsecret
+    links:
+      - db
+    ports:
+      - 3000:3000/tcp
+    command:
+      - test
+  staging:
+    build: .
+    environment:
+      SECRET_KEY: testsecret
+    links:
+      - db
+    ports:
+      - 3000:3000/tcp
