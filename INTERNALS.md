@@ -6,18 +6,18 @@ Besides of the [API](API.md) which is purely about I/O operations and interactio
 Of course, as always, software architecture (and architecture in general) is a lot about opinions.
 So what is written here is opinionated and subject to be discussed. Feel free to do so by submitting issue if you want to start one, I will happily give you answer !
 
-## Table of contents
+## Table of contents
 
-0. Global architecture
-1. Technology stack : why CoffeeScript ?
-2. The Routes
-3. The Models
-4. Authentication, JWT and friends
-5. The Managers
-6. The Controllers
-7. The Handlers
-8. Configuration
-9. Deployment and miscellaneous
+0. [Global architecture](#global-architecture)
+1. [Technology stack : why CoffeeScript ?](#technology-stack--why-coffeescript-)
+2. [The Routes](#the-routes)
+3. [The Models](#the-models)
+4. [Authentication, JWT and friends](#authentication-jwt-and-friends)
+5. [The Managers](#the-managers)
+6. [The Controllers](#the-controllers)
+7. [The Handlers](#the-handlers)
+8. [Configuration](#configuration)
+9. [Deployment and miscellaneous](#deployment-and-miscellaneous)
 
 # Global architecture
 
